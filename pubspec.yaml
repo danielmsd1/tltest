@@ -30,6 +30,7 @@ dependencies:
   flutter_svg: ^1.1.3
   font_awesome_flutter: ^10.1.0
   convex_bottom_bar: ^3.0.0
+  slide_to_confirm: ^1.1.0
   flutter:
     sdk: flutter
 
