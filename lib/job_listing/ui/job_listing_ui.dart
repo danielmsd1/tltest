@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:slide_to_confirm/slide_to_confirm.dart';
 import 'package:tltest/colors.dart';
 import 'package:tltest/job_listing/ui/modules/enabler_card.dart';
 import 'package:tltest/job_listing/ui/modules/range_slider_ui.dart';
@@ -141,6 +142,23 @@ class JobListingUI extends StatelessWidget {
                 cHeight: 10.0,
               ),
               const EnablerCard(),
+              const _Spacing(
+                cHeight: 10.0,
+              ),
+              ConfirmationSlider(
+                backgroundColor: color3,
+                foregroundColor: color1,
+                text: "SLIDE TO CONFIRM",
+                textStyle: const TextStyle(
+                  color: color1,
+                  fontSize: 15,
+                  fontFamily: "InterUI",
+                ),
+                onConfirmation: () => print("Confirmed!"),
+              ),
+              const _Spacing(
+                cHeight: 10.0,
+              ),
             ],
           ),
         ),
