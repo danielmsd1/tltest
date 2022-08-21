@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tltest/colors.dart';
-import 'package:tltest/constants.dart';
 
 class EnablerCard extends StatelessWidget {
   const EnablerCard({Key? key}) : super(key: key);
@@ -38,7 +38,7 @@ class EnablerCard extends StatelessWidget {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Icon(
                           Icons.verified,
                           color: color5,
@@ -60,39 +60,22 @@ class EnablerCard extends StatelessWidget {
                         SizedBox(
                           width: 5,
                         ),
-                        Icon(
-                          FontAwesomeIcons.moneyCheck,
-                          color: Colors.green,
-                          size: moneyHeight,
+                        RatingBarIndicator(
+                          rating: 8.2,
+                          itemCount: 5,
+                          itemPadding: const EdgeInsets.only(left: 3),
+                          itemSize: 10.0,
+                          physics: const BouncingScrollPhysics(),
+                          itemBuilder: (context, _) => const Icon(
+                            FontAwesomeIcons.moneyCheck,
+                            size: 10,
+                            color: color5,
+                          ),
                         ),
-                        SizedBox(
-                          width: 2,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.moneyCheck,
-                          color: Colors.green,
-                          size: moneyHeight,
-                        ),
-                        SizedBox(
-                          width: 2,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.moneyCheck,
-                          color: Colors.green,
-                          size: moneyHeight,
-                        ),
-                        SizedBox(
-                          width: 2,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.moneyCheck,
-                          color: Colors.green,
-                          size: moneyHeight,
-                        ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
-                        Icon(
+                        const Icon(
                           FontAwesomeIcons.solidHeart,
                           color: color3,
                         )
@@ -146,19 +129,17 @@ class EnablerCard extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 5.0),
                       child: Row(
-                        children: const [
-                          Icon(FontAwesomeIcons.star,
-                              size: starHeight, color: color3),
-                          Icon(FontAwesomeIcons.star,
-                              size: starHeight, color: color3),
-                          Icon(FontAwesomeIcons.star,
-                              size: starHeight, color: color3),
-                          Icon(FontAwesomeIcons.star,
-                              size: starHeight, color: color3),
-                          Icon(
-                            FontAwesomeIcons.star,
-                            color: Colors.grey,
-                            size: starHeight,
+                        children: [
+                          RatingBarIndicator(
+                            rating: 8.2,
+                            itemCount: 5,
+                            itemPadding: const EdgeInsets.only(left: 3),
+                            itemSize: 15.0,
+                            physics: const BouncingScrollPhysics(),
+                            itemBuilder: (context, _) => const Icon(
+                              Icons.star,
+                              color: color5,
+                            ),
                           ),
                           SizedBox(
                             width: 10,
