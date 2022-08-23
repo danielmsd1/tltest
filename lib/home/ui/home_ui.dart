@@ -22,6 +22,7 @@ class HomeUI extends StatelessWidget {
           TabItem(
             icon: Icons.home,
             title: "Home",
+            isIconBlend: true,
             activeIcon: CircleAvatar(
               radius: 30,
               child: Icon(
