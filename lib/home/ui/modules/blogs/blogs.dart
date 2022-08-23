@@ -14,7 +14,7 @@ class Blogs extends StatelessWidget {
           children: const [
             Text(
               "Blogs",
-              style: TextStyle(fontSize: 23),
+              style: titleRowsTextStyle,
             ),
           ],
         ),
@@ -27,20 +27,17 @@ class Blogs extends StatelessWidget {
               BlogCard(
                 image: blog1,
                 title: "Interior Design",
-                text:
-                    "Best architecture firm for home construction and interior designing at best rate.",
+                text: blogSampleBody,
               ),
               BlogCard(
                 image: blog2,
                 title: "Indoor Plants",
-                text:
-                    "Best architecture firm for home construction and interior designing at best rate.",
+                text: blogSampleBody,
               ),
               BlogCard(
                 image: blog3,
                 title: "Home Cleaning",
-                text:
-                    "Best architecture firm for home construction and interior designing at best rate.",
+                text: blogSampleBody,
               ),
             ],
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tltest/constants.dart';
 import 'package:tltest/home/ui/modules/working_schedule/schedule_card.dart';
 
 class WorkingSchedule extends StatelessWidget {
@@ -13,13 +14,13 @@ class WorkingSchedule extends StatelessWidget {
           children: const [
             Text(
               "Working Schedule",
-              style: TextStyle(fontSize: 23),
+              style: titleRowsTextStyle,
             ),
             TextButton(
               onPressed: null,
               child: Text(
                 "View All",
-                style: TextStyle(fontSize: 23),
+                style: titleRowsTextStyle,
               ),
             ),
           ],

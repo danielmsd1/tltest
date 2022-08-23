@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tltest/constants.dart';
 import 'package:tltest/home/ui/modules/offers_and_news/offer_card.dart';
 
 class OffersAndNews extends StatelessWidget {
@@ -13,7 +14,7 @@ class OffersAndNews extends StatelessWidget {
           children: const [
             Text(
               "Offers & News",
-              style: TextStyle(fontSize: 23),
+              style: titleRowsTextStyle,
             ),
           ],
         ),

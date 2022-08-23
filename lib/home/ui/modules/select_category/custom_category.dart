@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:tltest/constants.dart';
 import 'package:tltest/home/ui/modules/select_category/category_card.dart';
 
 class CustomCategory extends StatelessWidget {
@@ -14,13 +15,13 @@ class CustomCategory extends StatelessWidget {
           children: const [
             Text(
               "Select Category",
-              style: TextStyle(fontSize: 23),
+              style: titleRowsTextStyle,
             ),
             TextButton(
               onPressed: null,
               child: Text(
                 "View All",
-                style: TextStyle(fontSize: 23),
+                style: titleRowsTextStyle,
               ),
             )
           ],

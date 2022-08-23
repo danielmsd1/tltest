@@ -21,15 +21,19 @@ class SplashUI extends StatelessWidget {
               height: 80,
               color: color3,
             ),
-            verticalSpacing10,
-            const Text(
-              splashName,
-              style: splashNameTextStyle,
+            const SizedBox(
+              height: 10,
             ),
-            verticalSpacing10,
             const Text(
-              splashCompany,
-              style: splashCompanyTextStyle,
+              productName,
+              style: productNameTextStyle,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            const Text(
+              companyName,
+              style: companyNameTextStyle,
             ),
           ],
         ),
