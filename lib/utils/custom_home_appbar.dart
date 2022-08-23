@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:tltest/colors.dart';
 import 'package:tltest/constants.dart';
 
-class CustomAppbar extends StatelessWidget {
-  const CustomAppbar({Key? key}) : super(key: key);
+// This is the app bar used in the home interface
+class CustomHomeAppbar extends StatelessWidget {
+  const CustomHomeAppbar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -63,10 +64,10 @@ class CustomAppbar extends StatelessWidget {
                         Text(
                           "Samuel John",
                           style: TextStyle(
-                              color: color4,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 23,
-                              fontFamily: 'Roboto'),
+                            color: color4,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 23,
+                          ),
                         ),
                       ],
                     ),
@@ -136,7 +137,6 @@ class CustomAppbar extends StatelessWidget {
                         color: color4,
                         fontWeight: FontWeight.bold,
                         fontSize: 23,
-                        fontFamily: "Roboto",
                       ),
                     ),
                   ],

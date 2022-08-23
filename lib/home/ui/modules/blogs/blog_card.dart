@@ -15,7 +15,6 @@ class BlogCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // height: 96,
       width: 170,
       child: Card(
         shape: RoundedRectangleBorder(
@@ -28,19 +27,18 @@ class BlogCard extends StatelessWidget {
         ),
         child: Container(
           padding: const EdgeInsets.all(5.0),
-          // height: 96,
-          width: 167,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               Container(
                 padding: const EdgeInsets.all(5.0),
                 width: MediaQuery.of(context).size.width,
-                // height: 99.86,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image(
+                height: 95,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  image: DecorationImage(
                     image: NetworkImage(image),
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
@@ -71,9 +69,6 @@ class BlogCard extends StatelessWidget {
                   child: Row(
                     children: const [
                       Text("Read more"),
-                      // SizedBox(
-                      //   width: 5,
-                      // ),
                       SizedBox(
                         width: 10,
                       ),
@@ -82,7 +77,6 @@ class BlogCard extends StatelessWidget {
                         backgroundColor: color2,
                         child: Icon(
                           Icons.keyboard_arrow_right,
-                          // size: 22,
                           color: color4,
                         ),
                       ),

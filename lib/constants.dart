@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:tltest/colors.dart';
 
-const String splashName = "EVERY HOME";
-const String splashCompany = "- TL TECHNOLOGIES -";
+// String values used in the Splash file
+const String productName = "EVERY HOME";
+const String companyName = "- TL TECHNOLOGIES -";
 
-const TextStyle splashNameTextStyle = TextStyle(
+// Styling for the product name : Every Home
+const TextStyle productNameTextStyle = TextStyle(
   color: color3,
   fontSize: 23,
   fontWeight: FontWeight.bold,
@@ -12,7 +14,8 @@ const TextStyle splashNameTextStyle = TextStyle(
   letterSpacing: 4.0,
 );
 
-const TextStyle splashCompanyTextStyle = TextStyle(
+// Styling for the company name: TL Technologies
+const TextStyle companyNameTextStyle = TextStyle(
   color: color4,
   fontSize: 8,
   fontWeight: FontWeight.bold,
@@ -20,10 +23,10 @@ const TextStyle splashCompanyTextStyle = TextStyle(
   letterSpacing: 3.0,
 );
 
-const verticalSpacing10 = SizedBox(
-  height: 10,
-);
+// Styling used for the row title content in the home file
+const titleRowsTextStyle = TextStyle(fontSize: 23);
 
+// These are the static images used in the app
 const homeProfileImage =
     "https://images.unsplash.com/photo-1609010697446-11f2155278f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
 
@@ -36,6 +39,12 @@ const blog2 =
 const blog3 =
     "https://images.unsplash.com/photo-1559310278-18a9192d909f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60";
 
+const blogSampleBody =
+    "Best architecture firm for home construction and interior designing at best rate.";
+
 // enabler card
 const moneyHeight = 15.0;
 const starHeight = 15.0;
+
+const enablerSampleImage =
+    "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";

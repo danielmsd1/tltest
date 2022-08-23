@@ -27,7 +27,6 @@ class ScheduleCard extends StatelessWidget {
         ),
         child: Container(
           padding: const EdgeInsets.all(5.0),
-          // height: 96,
           width: 167,
           child: Column(
             mainAxisSize: MainAxisSize.min,
